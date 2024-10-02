@@ -6,7 +6,13 @@ import Formulario from "./formulario/components/Formulario";
 import Home from "./Home/components/Home";
 import ListaPokemon from "./lista/components/ListaPokemon";
 
+import { useEffect, useState } from "react";
+import Pokemones from "./cargarPokemons/components/Pokemones";
+
+
+
 function App() {
+
   return (
     <div className="w-screen h-screen bg-white font-ubuntu">
       <div className="w-full flex justify-center bg-blue-100">
@@ -30,6 +36,9 @@ function App() {
                 <li>
                   <Link to={'/lista'} className="px-3 py-2 hover:bg-blue-300 transition-all duration-100 rounded-lg">Pokemones</Link>
                 </li>
+                <li>
+                  <Link to={'/boton'} className="px-3 py-2 hover:bg-blue-300 transition-all duration-100 rounded-lg">Cargar</Link>
+                </li>
               </ul>
             </div>
           </nav>
@@ -39,6 +48,7 @@ function App() {
         <Route path="/formulario" element={<Formulario />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/lista" element={<ListaPokemon />}></Route>
+        <Route path="/boton" element={<Pokemones />}/>
       </Routes>
     </div>
   );
