@@ -49,6 +49,7 @@ const Home = () => {
                                             </h1>
                                             <p className="text-black text-sm">
                                                 Este es un pequeño cambio en el modal
+                                                Este es otro cambio individual
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est excepturi minima maiores, autem numquam unde!
                                             </p>
                                             <button onClick={handleCloseModal} className="w-full p-2 bg-red-600 hover:bg-red-800 text-black font-bold rounded-xl transition-all duration-100">
